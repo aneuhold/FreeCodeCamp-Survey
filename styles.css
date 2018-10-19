@@ -1,0 +1,29 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #42f48f;
+}
+h1, p {
+  text-align: center;
+}
+#survey-form {
+  border-radius: 20px;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  
+  background-color: hsl(0, 0%, 97%);
+  
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.19), 0 12px 12px rgba(0,0,0,0.23);
+  
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 20px;
+}
+.form-left {
+  text-align: right;
+}
+.form-center {
+  grid-column: 1/3;
+}

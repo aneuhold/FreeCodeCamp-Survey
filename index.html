@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <title>Free Code Camp - Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Favorite Subwoofer Survey</h1>
+  <p id="description">Spread the word about your favorite wub-maker!</p>
+  
+  <form id="survey-form">
+    <label for="fullName" class="form-left" id="name-label">Name:</label>
+    <input type="text" class="form-right" name="fullName" id="name" placeholder="Enter your name" required>
+    <label for="email" class="form-left" id="email-label">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+    <label for="age" class="form-left" id="number-label">Age:</label>
+    <input type="number" name="age" id="number" min="1" max="120" placeholder="Enter your age">
+    <label for="bestSubwooferBrand" class="form-left" id="dropdown-label">Best Subwoofer Brand:</label>
+    <select form="survey-form" id="dropdown" name="bestSubwooferBrand">
+      <option value="sundownAudio">Sundown Audio</option>
+      <option value="fullTimeJob">Crescendo Audio</option>
+      <option value="ddAudio">DD Audio</option>
+      <option value="psiCarAudio">PSI Car Audio</option>
+      <option value="other">Other</option>
+    </select>
+    <label for="favoriteSubwooferSize" class="form-left" id="favoriteSubwooferSize-label">Favorite Subwoofer Size <br>(A bunch of small ones or a few big ones!?): </label>
+    <div id="form-div-radioButtons">
+      <input type="radio" name="favoriteSubwooferSize" value="8"> 8" <br>
+      <input type="radio" name="favoriteSubwooferSize" value="10"> 10" <br>
+      <input type="radio" name="favoriteSubwooferSize" value="12"> 12" <br>
+      <input type="radio" name="favoriteSubwooferSize" value="15"> 15" <br>
+      <input type="radio" name="favoriteSubwooferSize" value="18"> 18" <br>
+    </div>
+    <label for="favoriteAmpBrands" class="form-left" id="favoriteAmpBrands-label">Favorite Amplifier Brands:</label>
+    <div id="form-div-checkboxes">
+      <input type="checkbox" name="favoriteAmpBrands" value="crescendoAudio"> Crescendo Audio<br>
+      <input type="checkbox" name="favoriteAmpBrands" value="rockfordFosgate"> Rockford Fosgate<br>
+      <input type="checkbox" name="favoriteAmpBrands" value="sundownAudio"> Sundown Audio<br>
+      <input type="checkbox" name="favoriteAmpBrands" value="kickerAudio"> Kicker Audio<br>
+      <input type="checkbox" name="favoriteAmpBrands" value="deafBonce"> Deaf Bonce<br>
+      <input type="checkbox" name="favoriteAmpBrands" value="ddAudio"> DD Audio<br>
+    </div>
+    <label for="additionalComments" id="additionalComments-label" class="form-left">Additional Comments:</label>
+    <textarea name="additionalComments" rows="3"></textarea>
+    <input type="submit" id="submit" class="form-center">
+  </form>
+</body>
+</html>
